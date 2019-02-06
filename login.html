@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fly:: Chat App Login</title>
+
+    <link href="assets/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="#" class="logo">FLY<span class="font-wt-300">chat</span></a>
+        <nav>
+            <ul>
+                <li id="headerLoginBtn">
+                    <a href="" onclick="signUpAction(); return false">Login</a>
+                </li>
+                <li id="headerSignUpBtn">
+                    <a href="" onclick="goToSignUp(); return false">SignUp</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <form>
+            <!-- SIGN UP  -->
+            <section class="login-wrapper" id="signUpWrapper">
+                <h2>New User Sign up!</h2>
+                <div class="field-wrap">
+                    <label>Email</label>
+                    <input type="text" placeholder="john@email.com">
+                </div>
+                <div class="field-wrap">
+                    <label>Password</label>
+                    <input type="password" placeholder="password">
+                </div>
+
+                <div class="btn-wrap">
+                    <button id="btnSignup" onclick="signUpAction(); return false">Submit</button>
+                </div>
+            </section>
+
+            <!-- LOGIN -->
+            <section class="login-wrapper" id="loginWrapper">
+                <h2>Login</h2>
+                <div class="field-wrap">
+                    <label>Username</label>
+                    <input type="text" placeholder="username">
+                </div>
+                <div class="field-wrap">
+                    <label>Password</label>
+                    <input type="password" placeholder="password">
+                </div>
+                <div class="btn-wrap">
+                    <a href="#" onclick="resetPasswordAction(); return false">Forgot Password?</a>
+                    <button id="btnLogin" onclick="loginAction(); return false">Login</button>
+
+                </div>
+            </section>
+
+            <!-- RESET PASSWORD -->
+            <section class="login-wrapper" id="resetPasswordWrapper">
+                <h2>Reset Password</h2>
+                <div class="field-wrap">
+                    <label>New Password</label>
+                    <input type="password" placeholder="password">
+                </div>
+
+                <div class="btn-wrap">
+                    <a href="#" onclick="signUpAction(); return false">Cancel</a>
+                    <button id="btnResetPassword" onclick="signUpAction(); return false">Reset</button>
+                </div>
+            </section>
+
+
+        </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>All rights reserved 2018</footer>
+
+    <!-- js files -->
+    <script src="js/app.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

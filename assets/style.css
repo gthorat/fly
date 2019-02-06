@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500');
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex: auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(49, 49, 49);
+    background-color: #F3F2F1;
+    display: flex;
+    flex-direction: column;
+}
+
+body>*,
+header>* {
+    flex: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-wt-300 {
+    font-weight: 300;
+}
+
+strong,
+b,
+.font-wt-500 {
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    color: #330260;
+}
+
+footer,
+main {
+    padding: 10px;
+}
+
+header,
+footer,
+.logo {
+    flex: none;
+}
+
+header {
+    background-color: #330260;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    padding: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 30px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav li {
+    color: #fff;
+    padding: 0 20px;
+    border-left: 1px solid #643a8a;
+}
+
+nav li a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+.user-logged {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-sign-out {
+    padding: 0;
+    font-size: 0.75rem;
+    line-height: 15px;
+    color: pink;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-wrapper {
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background: #fff;
+    width: 260px;
+}
+
+.field-wrap {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    padding: 10px;
+    background-color: #330260;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border: none;
+    margin-left: 10px;
+}
+
+
+.btn-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 10px;
+}
+
+
+
+
+/*  */
+footer {
+    background-color: rgb(230, 230, 230);
+    height: 20px;
+    color: #000;
+    text-align: center;
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 20px;
+}
