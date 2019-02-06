@@ -21,7 +21,10 @@ body {
 }
 
 body>*,
-header>* {
+header>*,
+.chat-room-wrapper form,
+.chat-room-wrapper form > *,
+.chat-box-wrapper > * {
     flex: auto;
 }
 
@@ -51,14 +54,10 @@ h6 {
     color: #330260;
 }
 
-footer,
-main {
-    padding: 10px;
-}
-
 header,
 footer,
-.logo {
+.logo,
+.chat-text-input {
     flex: none;
 }
 
@@ -117,10 +116,10 @@ nav li a {
     padding: 0;
     font-size: 0.75rem;
     line-height: 15px;
-    color: pink;
+    color: #ffc0cb;
 }
 
-main {
+main, main form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,8 +158,6 @@ button {
     align-items: center;
 }
 
-
-
 label {
     margin-bottom: 5px;
 }
@@ -170,16 +167,102 @@ input {
     padding: 10px;
 }
 
+textarea {
+    width: 100%;
+}
 
+.chat-room-wrapper,
+.chat-room-wrapper form {
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.user-list-wrapper {
+    max-width: 250px;
+    background-color: #fff;
+    border-right: 1px solid #ece1d8;
+}
+
+.user-list-search-box {
+    padding: 1px;
+    flex-direction: row;
+}
+
+.user-list-search-box button {
+    margin-left: 0;
+}
+
+.user-list-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-list-items li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;
+    color: #000;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 0.9375rem;
+}
+
+.user-list-items li a:hover {
+    background-color: #330260;
+    color: #fff;
+}
+.user-list-items li span {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid #d7c3ea;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.user-list-items li a:hover span {
+    border-color: #ffc0cb;
+}
+
+.chat-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.chat-text-input {
+    padding: 20px 20px 0;
+}
+
+.chat-history-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+    padding: 20px;
+}
 
 
 /*  */
 footer {
     background-color: rgb(230, 230, 230);
+    border-top: 1px solid #ece1d8;
     height: 20px;
+    padding: 10px;
     color: #000;
     text-align: center;
     font-weight: 300;
     font-size: 0.75rem;
     line-height: 20px;
+}
+
+/* MEDIAQUERIES */
+@media(max-width: 991px) {
+
 }
