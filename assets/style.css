@@ -1,17 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500');
 
-@font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
-    src: local('Material Icons'),
-      local('MaterialIcons-Regular'),
-      url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
-      url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
-      url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
-  }
-  
 html,
 body {
     padding: 0;
@@ -214,6 +202,7 @@ textarea {
     list-style: none;
     padding: 0;
     margin: 0;
+    overflow-y: auto;
 }
 
 .user-list-items li a {
@@ -263,6 +252,8 @@ textarea {
     justify-content: flex-end;
     align-content: flex-end;
     padding: 20px;
+    border-bottom: 1px solid #dadada;
+    overflow-y: auto;
 }
 
 
@@ -270,13 +261,13 @@ textarea {
 footer {
     background-color: rgb(230, 230, 230);
     border-top: 1px solid #ece1d8;
-    height: 20px;
+    height: 10px;
     padding: 10px;
     color: #000;
     text-align: center;
     font-weight: 300;
     font-size: 0.75rem;
-    line-height: 20px;
+    line-height: 10px;
 }
 
 /* MEDIAQUERIES */
