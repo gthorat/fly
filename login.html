@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fly:: Chat App Login</title>
+    <title><?php echo TITLE;?></title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="assets/style.css" rel="stylesheet">
+    <!-- <link href="assets/style.css" rel="stylesheet"> -->
 
     <!-- https://material.io/tools/icons/?icon=question_answer&style=baseline -->
+
+    <?php
+        include("css/style.css");
+    ?>
     
 </head>
 
@@ -94,11 +98,13 @@
     </main>
 
     <!-- FOOTER -->
-    <footer>All rights reserved 2018. FLYchat</footer>
+    <footer>All rights reserved 2019. FLYchat</footer>
 
     <!-- js files -->
-    <script src="js/app.js"></script>
-    <script src="js/login.js"></script>
+    <?php
+        include("js/login.js");
+        include("js/chatroom.js");
+    ?>
 </body>
 
 </html>
