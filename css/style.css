@@ -23,8 +23,8 @@ body {
 body>*,
 header>*,
 .chat-room-wrapper form,
-.chat-room-wrapper form > *,
-.chat-box-wrapper > * {
+.chat-room-wrapper form>*,
+.chat-box-wrapper>* {
     flex: auto;
 }
 
@@ -48,9 +48,11 @@ a {
     color: #330260;
     text-decoration: none;
 }
+
 .material-icons {
     margin-right: 0.3125rem;
 }
+
 h1,
 h2,
 h3,
@@ -131,7 +133,8 @@ nav li a {
     color: #ffc0cb;
 }
 
-main, main form {
+main,
+main form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -226,16 +229,17 @@ textarea {
 }
 
 .user-list-items li a:hover {
-    background-color: #330260;
-    color: #fff;
+    background-color: #E8E8F2;
 }
+
 .user-list-items li span,
 .chat-box span {
     width: 1.875rem;
     height: 1.875rem;
     border-radius: 100%;
-    border: 1px solid #d7c3ea;
-    background-color: #fff;
+    color: #fff;
+    border: 1px solid rgb(218, 146, 133);
+    background-color: #EE9888;
     margin-right: 0.625rem;
     text-align: center;
     line-height: 1.875rem;
@@ -254,6 +258,8 @@ textarea {
 
 .chat-text-input {
     padding: 1.25rem 1.25rem 0;
+    width: 43.75rem;
+    margin: 0 auto;
 }
 
 .chat-history-box {
@@ -271,9 +277,9 @@ textarea {
     flex-direction: row;
     justify-content: flex-end;
     padding: 0.9375rem 0;
-    width: 700px;
+    width: 43.75rem;
     margin: 0 auto;
-}   
+}
 
 .chat-box span {
     width: 2.1875rem;
@@ -289,33 +295,35 @@ textarea {
     padding: 1.25rem;
     font-size: 0.875rem;
     border-radius: 0.625rem;
-    min-width: 100px;
+    min-width: 6.25rem;
+    color: #000;
 }
 
-.chat-box div:before { 
+.chat-box div:before {
     content: "";
     position: absolute;
-    left: -15px;
-    top: 5px;
+    left: -0.9375rem;
+    top: 0.3125rem;
     width: 0;
     height: 0;
     border: 0 solid transparent;
-    border-left-width: 25px;
-    border-right-width: 0px;
-    border-top: 20px solid #feffdd;
+    border-left-width: 1.5625rem;
+    border-right-width: 0;
+    border-top: 1.25rem solid #feffdd;
 }
 
 .chat-box.their-chat {
     justify-content: flex-start;
 }
+
 .chat-box.mine-chat span,
 .chat-box div:before {
     display: none;
 }
 
 .chat-box.mine-chat div {
-    background-color: #e5f5ff;
-    border: 1px solid #58aee0;
+    background-color: #E0E0ED;
+    border: 1px solid #CECEED;
 }
 
 
