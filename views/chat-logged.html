@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php echo TITLE;?></title>
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <link href="assets/style.css" rel="stylesheet"> -->
-
-    <?php
-        include("css/style.css");
-    ?>
+    
+    <?php echo '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">' ?>
+    <style>
+        <?php include 'css/style.css'; ?>
+    </style>
+    
 
 </head>
 
@@ -106,10 +105,9 @@
     <footer>All rights reserved 2019. FLYchat</footer>
 
     <!-- js files -->
-    <?php
-        include("js/login.js");
-        include("js/chatroom.js");
-    ?>
+    <script>
+        <?php include 'js/chatroom.js'; ?>
+    </script>
 </body>
 
 </html>

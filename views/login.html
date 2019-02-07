@@ -5,23 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><?php echo TITLE;?></title>
+    <title>
+        <?php echo TITLE;?>
+    </title>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <link href="assets/style.css" rel="stylesheet"> -->
+    <?php echo '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">' ?>
+
 
     <!-- https://material.io/tools/icons/?icon=question_answer&style=baseline -->
+    <style>
+        <?php include 'css/style.css'; ?>
+    </style>
 
-    <?php
-        include("css/style.css");
-    ?>
-    
+
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
-        <a href="#" class="logo">FLY<small class="font-wt-300">chat</small> 
+        <a href="#" class="logo">FLY<small class="font-wt-300">chat</small>
             <i class="material-icons">question_answer</i>
         </a>
         <nav>
@@ -101,10 +103,9 @@
     <footer>All rights reserved 2019. FLYchat</footer>
 
     <!-- js files -->
-    <?php
-        include("js/login.js");
-        include("js/chatroom.js");
-    ?>
+    <script>
+        <?php include 'js/login.js'; ?>
+    </script>
 </body>
 
 </html>

@@ -32,7 +32,7 @@ function signUpAction() {
 // LOGIN - ACTION GO TO CHATROOM
 function loginAction() {
     loginSection.style.display = "none";
-    location.href = "index.html";
+    location.href = "chat-logged.php";
 };
 
 // RESET PASSWORD - ACTION GO TO RE LOGIN 

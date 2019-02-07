@@ -2,5 +2,5 @@
 
 // SUBMIT SIGNUP APP
 function signOutAction(){
-    location.href = "login.html";
+    location.href = "index.php";
 };
