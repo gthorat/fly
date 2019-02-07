@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fly:: Chat App Login</title>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="assets/style.css" rel="stylesheet">
 
 </head>
@@ -14,11 +15,19 @@
 <body>
     <!-- HEADER -->
     <header>
-        <a href="#" class="logo">FLY<small class="font-wt-300">chat</small></a>
+        <a href="#" class="logo">FLY<small class="font-wt-300">chat</small>
+            <i class="material-icons">question_answer</i>
+        </a>
         <nav>
             <ul>
-                <li class="user-logged" id="userLogged">Hi! user</br>
-                    <a href="" class="btn-sign-out" id="btnSignOut" onclick="signOutAction(); return false">Sign out</a></li>
+                <li class="user-logged" id="userLogged">
+                    <i class="material-icons">face</i>
+                    <span>
+                        Hi! user</br>
+                        <a href="" class="btn-sign-out" id="btnSignOut" onclick="signOutAction(); return false">Sign
+                            out</a>
+                    </span>
+                </li>
             </ul>
         </nav>
     </header>
@@ -30,7 +39,7 @@
             <section class="user-list-wrapper" id="userListWrapper">
                 <div class="field-wrap user-list-search-box">
                     <input type="text" placeholder="Search user">
-                    <button>s</button>
+                    <button><i class="material-icons">search</i></button>
                 </div>
 
                 <!-- USER LIST -->
@@ -53,7 +62,9 @@
                 <div class="chat-text-input" id="chatTextInput">
                     <div class="field-wrap user-list-search-box">
                         <textarea placeholder="Type message" rows="4"></textarea>
-                        <button>send</button>
+                        <button>
+                            <i class="material-icons">send</i>
+                        </button>
                     </div>
                 </div>
 

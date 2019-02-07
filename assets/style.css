@@ -48,7 +48,9 @@ a {
     color: #330260;
     text-decoration: none;
 }
-
+.material-icons {
+    margin-right: 0.3125rem;
+}
 h1,
 h2,
 h3,
@@ -57,6 +59,8 @@ h5,
 h6 {
     margin-top: 0;
     color: #330260;
+    display: flex;
+    align-items: center;
 }
 
 header,
@@ -68,17 +72,17 @@ footer,
 
 header {
     background-color: #330260;
-    height: 50px;
+    height: 3.125rem;
     color: #fff;
     display: flex;
     flex-direction: row;
 }
 
 .logo {
-    padding: 10px;
+    padding: 0.625rem;
     color: #fff;
     font-size: 1.5rem;
-    line-height: 30px;
+    line-height: 1.875rem;
     font-weight: 500;
     text-decoration: none;
 }
@@ -100,27 +104,30 @@ nav ul {
 
 nav li {
     color: #fff;
-    padding: 0 20px;
+    padding: 0 1.25rem;
     border-left: 1px solid #643a8a;
 }
 
 nav li a {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     color: #fff;
     text-decoration: none;
-    line-height: 50px;
+    line-height: 3.125rem;
 }
 
 .user-logged {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .btn-sign-out {
     padding: 0;
     font-size: 0.75rem;
-    line-height: 15px;
+    line-height: 0.9375rem;
     color: #ffc0cb;
 }
 
@@ -132,26 +139,26 @@ main, main form {
 }
 
 .login-wrapper {
-    padding: 30px;
+    padding: 1.875rem;
     border: 1px solid #ccc;
-    border-radius: 15px;
+    border-radius: 0.9375rem;
     background: #fff;
-    width: 260px;
+    width: 16.25rem;
 }
 
 .field-wrap {
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
     display: flex;
     flex-direction: column;
 }
 
 button {
-    padding: 10px;
+    padding: 0.625rem;
     background-color: #330260;
     color: #fff;
     font-size: 1rem;
     border: none;
-    margin-left: 10px;
+    margin-left: 0.625rem;
     cursor: pointer;
 }
 
@@ -164,12 +171,12 @@ button {
 }
 
 label {
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
 }
 
 input {
-    width: calc(100% - 22px);
-    padding: 10px;
+    width: calc(100% - 1.375rem);
+    padding: 0.625rem;
 }
 
 textarea {
@@ -184,7 +191,7 @@ textarea {
 }
 
 .user-list-wrapper {
-    max-width: 250px;
+    max-width: 15.625rem;
     background-color: #fff;
     border-right: 1px solid #ece1d8;
 }
@@ -210,7 +217,7 @@ textarea {
     flex-direction: row;
     justify-content: stretch;
     align-items: center;
-    padding: 10px;
+    padding: 0.625rem;
     border-bottom: 1px solid #f2f2f2;
     color: #000;
     text-decoration: none;
@@ -223,12 +230,12 @@ textarea {
     color: #fff;
 }
 .user-list-items li span {
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     border-radius: 100%;
     border: 1px solid #d7c3ea;
     background-color: #fff;
-    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 .user-list-items li a:hover span {
@@ -243,7 +250,7 @@ textarea {
 }
 
 .chat-text-input {
-    padding: 20px 20px 0;
+    padding: 1.25rem 1.25rem 0;
 }
 
 .chat-history-box {
@@ -251,7 +258,7 @@ textarea {
     flex-direction: column;
     justify-content: flex-end;
     align-content: flex-end;
-    padding: 20px;
+    padding: 1.25rem;
     border-bottom: 1px solid #dadada;
     overflow-y: auto;
 }
@@ -261,13 +268,13 @@ textarea {
 footer {
     background-color: rgb(230, 230, 230);
     border-top: 1px solid #ece1d8;
-    height: 10px;
-    padding: 10px;
+    height: 0.625rem;
+    padding: 0.625rem;
     color: #000;
     text-align: center;
     font-weight: 300;
     font-size: 0.75rem;
-    line-height: 10px;
+    line-height: 0.625rem;
 }
 
 /* MEDIAQUERIES */
