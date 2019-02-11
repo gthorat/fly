@@ -34,10 +34,10 @@ function signUpAction() {
 // LOGIN - ACTION GO TO CHATROOM
 function loginAction() {
     loginSection.style.display = "none";
-    location.href = "chat-logged.php";
+    location.href = "chat-room.php";
 };
 
-// RESET PASSWORD - ACTION GO TO RE LOGIN 
+// RESET PASSWORD - ACTION GO TO RE LOGIN
 function resetPasswordAction() {
     loginSection.style.display = "none";
     resetPasswordSection.style.display = "block";

@@ -1,16 +1,62 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title><?php echo TITLE;?></title>
-    </head>
-    <body>
-        <header>
-            FLY
-        </header>
-        <main>
-            This is my Work environment Setup
-        </main>
-        <footer>&copy; Copyright by FLY 2019</footer>
-    </body>
-</html>
+<?php
+    include(COMMON_PATH."header.php");
+?>
+<main>
+    <form>
+        <!-- SIGN UP  -->
+        <section class="login-wrapper" id="signUpWrapper">
+            <h2><i class="material-icons">assignment_ind</i> Sign up!</h2>
+            <div class="field-wrap">
+                <label>Email</label>
+                <input type="text" placeholder="john@email.com">
+            </div>
+            <div class="field-wrap">
+                <label>Password</label>
+                <input type="password" placeholder="password">
+            </div>
+            <div class="field-wrap">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="confirm password">
+            </div>
+            <div class="btn-wrap">
+                <button id="btnSignup" onclick="signUpAction(); return false">Submit</button>
+            </div>
+
+        </section>
+
+        <!-- LOGIN -->
+        <section class="login-wrapper" id="loginWrapper">
+            <h2><i class="material-icons">vpn_key</i> Login</h2>
+            <div class="field-wrap">
+                <label>Username</label>
+                <input type="text" placeholder="username">
+            </div>
+            <div class="field-wrap">
+                <label>Password</label>
+                <input type="password" placeholder="password">
+            </div>
+            <div class="btn-wrap">
+                <a href="#" onclick="resetPasswordAction(); return false">Forgot Password?</a>
+                <button id="btnLogin" onclick="loginAction(); return false">Login</button>
+
+            </div>
+        </section>
+
+        <!-- RESET PASSWORD -->
+        <section class="login-wrapper" id="resetPasswordWrapper">
+            <h2><i class="material-icons">build</i> Reset Password</h2>
+            <div class="field-wrap">
+                <label>New Password</label>
+                <input type="password" placeholder="password">
+            </div>
+
+            <div class="btn-wrap">
+                <a href="#" onclick="signUpAction(); return false">Cancel</a>
+                <button id="btnResetPassword" onclick="signUpAction(); return false">Reset</button>
+            </div>
+        </section>
+    </form>
+</main>
+<?php
+    include(COMMON_PATH."footer.php");
+?>
