@@ -5,11 +5,13 @@ var loginSection = document.getElementById("loginWrapper");
 var resetPasswordSection = document.getElementById("resetPasswordWrapper");
 var headerSignUpBtn = document.getElementById("headerSignUpBtn");
 var headerLoginBtn = document.getElementById("headerLoginBtn");
+var materialIcons = document.getElementsByClassName("material-icons");
 
 // HIDE SOME INFO
 headerSignUpBtn.style.display = "none";
 loginSection.style.display = "none";
 resetPasswordSection.style.display = "none";
+materialIcons.style.display = "none";
 
 // GO TO SIGNUP
 function goToSignUp() {
@@ -40,3 +42,9 @@ function resetPasswordAction() {
     loginSection.style.display = "none";
     resetPasswordSection.style.display = "block";
 };
+
+// MATERIAL ICON ON LOAD
+function showMaterialIcons() {
+    materialIcons.style.display = "block";
+};
+    window.load = showMaterialIcons();
