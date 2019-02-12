@@ -6,6 +6,7 @@
 <!-- js files -->
 <script>
     <?php include 'js/login.js'; ?>
+    <?php include 'js/chatroom.js'; ?>
 </script>
 </body>
 

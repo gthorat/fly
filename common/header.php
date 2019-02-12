@@ -38,7 +38,14 @@
                         <i class="material-icons">assignment_ind</i> SignUp
                     </a>
                 </li>
-
+                <li class="user-logged" id="userLogged">
+                    <i class="material-icons">face</i>
+                    <span>
+                        Hi! user</br>
+                        <a href="" class="btn-sign-out" id="btnSignOut" onclick="signOutAction(); return false">Sign
+                            out</a>
+                    </span>
+                </li>
             </ul>
         </nav>
     </header>
