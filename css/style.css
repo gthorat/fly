@@ -329,11 +329,11 @@ textarea {
 
 /*  */
 footer {
-    background-color: rgb(230, 230, 230);
+    background-color: #330260;
     border-top: 1px solid #ece1d8;
     height: 0.625rem;
     padding: 0.625rem;
-    color: #000;
+    color: #fff;
     text-align: center;
     font-weight: 300;
     font-size: 0.75rem;
