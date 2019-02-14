@@ -3,10 +3,11 @@
 <!-- FOOTER -->
 <footer>All rights reserved 2019. FLYchat</footer>
 
-<!-- js files -->
-<script>
-    <?php include 'js/login.js'; ?>
-</script>
-</body>
 
+<!-- js files -->
+<script src="js/login.js"></script>
+<script src="js/chatroom.js"></script>
+
+
+</body>
 </html>
