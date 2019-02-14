@@ -2,57 +2,62 @@
     include(COMMON_PATH."header.php");
 ?>
 <main>
-    <form>
-        <!-- SIGN UP  -->
+    <div class="error-message-box" id="errorMessageBox">
+        <!-- <i class="material-icons">report_problem</i>  -->
+        <span id="errorMessageText"></span>
+    </div>
+
+    <!-- LOGIN -->
+    <form name="registrationForm" action="chat-room.php" onsubmit="return(loginFormAction())" method="POST">
+        <section class="login-wrapper" id="loginWrapper">
+            <h2><i class="material-icons">vpn_key</i> Login</h2>
+            <div class="field-wrap">
+                <label>Email</label>
+                <input type="text" name="userEmail" placeholder="user email">
+            </div>
+            <div class="field-wrap">
+                <label>Password</label>
+                <input type="password" name="Password" placeholder="password">
+            </div>
+            <div class="btn-wrap">
+                <a href="#" onclick="resetPasswordFlow(); return false">Forgot Password?</a>
+                <!-- <input type="submit" value="send" name="Submit"> -->
+                <button type="submit" id="btnLogin" name="Submit">Login</button>
+            </div>
+        </section>
+    </form>
+    <!-- SIGN UP  -->
+    <form name="signupForm" action="" onsubmit="return(signupFormAction())" method="POST">
         <section class="login-wrapper" id="signUpWrapper">
             <h2><i class="material-icons">assignment_ind</i> Sign up!</h2>
             <div class="field-wrap">
                 <label>Email</label>
-                <input type="text" placeholder="john@email.com">
+                <input type="text" name="Email" placeholder="john@email.com">
             </div>
             <div class="field-wrap">
-                <label>Password</label>
-                <input type="password" placeholder="password">
+                <label>Create Password</label>
+                <input type="password" name="CreatePassword" placeholder="create password">
             </div>
             <div class="field-wrap">
                 <label>Confirm Password</label>
-                <input type="password" placeholder="confirm password">
+                <input type="password" name="ComfirmPassword" placeholder="confirm password">
             </div>
             <div class="btn-wrap">
-                <button id="btnSignup" onclick="signUpAction(); return false">Submit</button>
-            </div>
-
-        </section>
-
-        <!-- LOGIN -->
-        <section class="login-wrapper" id="loginWrapper">
-            <h2><i class="material-icons">vpn_key</i> Login</h2>
-            <div class="field-wrap">
-                <label>Username</label>
-                <input type="text" placeholder="username">
-            </div>
-            <div class="field-wrap">
-                <label>Password</label>
-                <input type="password" placeholder="password">
-            </div>
-            <div class="btn-wrap">
-                <a href="#" onclick="resetPasswordAction(); return false">Forgot Password?</a>
-                <button id="btnLogin" onclick="loginAction(); return false">Login</button>
-
+                <button id="btnSignup" type="submit" name="submit">Submit</button>
             </div>
         </section>
-
-        <!-- RESET PASSWORD -->
+    </form>
+    <!-- RESET PASSWORD -->
+    <form name="resetPasswordForm" action="" onsubmit="return(resetPasswordFormAction())" method="POST">  
         <section class="login-wrapper" id="resetPasswordWrapper">
             <h2><i class="material-icons">build</i> Reset Password</h2>
             <div class="field-wrap">
-                <label>New Password</label>
-                <input type="password" placeholder="password">
+                <label>Reset Password</label>
+                <input type="password" name="ResetPassword" placeholder="reset password">
             </div>
-
             <div class="btn-wrap">
-                <a href="#" onclick="signUpAction(); return false">Cancel</a>
-                <button id="btnResetPassword" onclick="signUpAction(); return false">Reset</button>
+                <a href="#" onclick="signUpFlow(); return false">Cancel</a>
+                <button id="btnResetPassword" name="Submit" type="submit">Reset</button>
             </div>
         </section>
     </form>
