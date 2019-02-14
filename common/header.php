@@ -11,12 +11,10 @@
 
     <?php echo '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">' ?>
 
-
     <!-- https://material.io/tools/icons/?icon=question_answer&style=baseline -->
     <style>
         <?php include 'css/style.css'; ?>
     </style>
-
 
 </head>
 
@@ -29,12 +27,12 @@
         <nav>
             <ul>
                 <li id="headerLoginBtn">
-                    <a href="" onclick="signUpAction(); return false">
+                    <a href="" onclick="goToLoginFlow(); return false">
                         <i class="material-icons">vpn_key</i> Login
                     </a>
                 </li>
                 <li id="headerSignUpBtn">
-                    <a href="" onclick="goToSignUp(); return false">
+                    <a href="" onclick="goToSignUpFlow(); return false">
                         <i class="material-icons">assignment_ind</i> SignUp
                     </a>
                 </li>
