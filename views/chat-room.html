@@ -2,49 +2,52 @@
     include(COMMON_PATH."header.php");
 ?>
 <main class="chat-room-wrapper">
-    <form>
-        <!-- CHAT USER LIST -->
-        <section class="user-list-wrapper" id="userListWrapper">
+
+    <!-- CHAT USER LIST -->
+    <section class="user-list-wrapper" id="userListWrapper">
+        <form name="searchUserForm" onsubmit="return(searchUserAction())" method="GET">
             <div class="field-wrap user-list-search-box">
-                <input type="text" placeholder="Search user">
+                <input type="text" name="searchUserName" placeholder="Search user" id="userListSearchBox">
                 <button><i class="material-icons">search</i></button>
             </div>
 
             <!-- USER LIST -->
             <ul class="user-list-items">
-                <li><a href=""><span></span>Name</a></li>
-                <li><a href=""><span></span>Name</a></li>
-                <li><a href=""><span></span>Name</a></li>
-                <li><a href=""><span></span>Name</a></li>
-                <li><a href=""><span></span>Name</a></li>
+                <li class="user-list-item"><span></span> name 1</li>
+                <li class="user-list-item"><span></span> Same 2</li>
+                <li class="user-list-item"><span></span> Dame 3</li>
+                <li class="user-list-item"><span></span> Pame 4</li>
+                <li class="user-list-item"><span></span> Name 5</li>
             </ul>
-        </section>
+        </form>
+    </section>
 
-        <!-- CHAT BOX -->
-        <section class="chat-box-wrapper" id="chatBoxWrapper">
 
+    <!-- CHAT BOX -->
+    <section class="chat-box-wrapper" id="chatBoxWrapper">
+        <form>
             <!-- CHAT HISTORY -->
             <div class="chat-history-box" id="chatHistoryBox">
                 <!-- SINGLE CHAT BOX -->
-                <div class="chat-box mine-chat">
-                    <span>user</span>
+                <div class="chat-box mine-chat" data-user="Name">
+                    <span></span>
                     <div>Hi from me</div>
                 </div>
                 <!-- SINGLE CHAT BOX -->
-                <div class="chat-box their-chat">
-                    <span>user</span>
+                <div class="chat-box their-chat" data-user="Same">
+                    <span></span>
                     <div>Hi from u</div>
                 </div>
 
                 <!-- SINGLE CHAT BOX -->
-                <div class="chat-box mine-chat">
-                    <span>user</span>
+                <div class="chat-box mine-chat" data-user="dame">
+                    <span></span>
                     <div>This just a dummy text with some long text</div>
                 </div>
 
                 <!-- SINGLE CHAT BOX -->
-                <div class="chat-box their-chat">
-                    <span>user</span>
+                <div class="chat-box their-chat" data-user="pame">
+                    <span></span>
                     <div>ok</div>
                 </div>
 
@@ -59,9 +62,9 @@
                     </button>
                 </div>
             </div>
+        </form>
+    </section>
 
-        </section>
-    </form>
 </main>
 <?php
     include(COMMON_PATH."footer.php");
