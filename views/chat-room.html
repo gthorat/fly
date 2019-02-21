@@ -5,19 +5,19 @@
 
     <!-- CHAT USER LIST -->
     <section class="user-list-wrapper" id="userListWrapper">
-        <form name="searchUserForm" onsubmit="return(searchUserAction())" method="GET">
+        <form name="searchUserForm" method="POST">
             <div class="field-wrap user-list-search-box">
-                <input type="text" name="searchUserName" placeholder="Search user" id="userListSearchBox">
-                <button><i class="material-icons">search</i></button>
+                <input type="text" name="searchUserName" placeholder="Search user" id="userListSearchBox" onkeyup="searchUserAction()">
+                <button type="submit"><i class="material-icons">search</i></button>
             </div>
 
             <!-- USER LIST -->
             <ul class="user-list-items">
-                <li class="user-list-item"><span></span> name 1</li>
-                <li class="user-list-item"><span></span> Same 2</li>
-                <li class="user-list-item"><span></span> Dame 3</li>
-                <li class="user-list-item"><span></span> Pame 4</li>
-                <li class="user-list-item"><span></span> Name 5</li>
+                <li class="user-list-item user-item"><span></span> Dhananjay</li>
+                <li class="user-list-item user-item"><span></span> Ganesh</li>
+                <li class="user-list-item user-item"><span></span> Shivaji</li>
+                <li class="user-list-item user-item"><span></span> Sujit</li>
+                <li class="user-list-item user-item"><span></span> Prateek</li>
             </ul>
         </form>
     </section>
@@ -29,24 +29,24 @@
             <!-- CHAT HISTORY -->
             <div class="chat-history-box" id="chatHistoryBox">
                 <!-- SINGLE CHAT BOX -->
-                <div class="chat-box mine-chat" data-user="Name">
+                <div class="chat-box mine-chat" data-user="MY">
                     <span></span>
                     <div>Hi from me</div>
                 </div>
                 <!-- SINGLE CHAT BOX -->
-                <div class="chat-box their-chat" data-user="Same">
+                <div class="chat-box their-chat" data-user="you">
                     <span></span>
                     <div>Hi from u</div>
                 </div>
 
                 <!-- SINGLE CHAT BOX -->
-                <div class="chat-box mine-chat" data-user="dame">
+                <div class="chat-box mine-chat" data-user="my">
                     <span></span>
                     <div>This just a dummy text with some long text</div>
                 </div>
 
                 <!-- SINGLE CHAT BOX -->
-                <div class="chat-box their-chat" data-user="pame">
+                <div class="chat-box their-chat" data-user="you">
                     <span></span>
                     <div>ok</div>
                 </div>
