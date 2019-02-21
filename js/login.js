@@ -9,7 +9,7 @@ var materialIcons = document.getElementsByClassName("material-icons");
 var headerSignOutBtn = document.getElementById("userLogged");
 
 // HIDE SOME INFO ON PAGE TYPE
-if (window.location.href.indexOf("index") > -1) {
+if (window.location.href.indexOf("index") > -1 || window.location.href.indexOf("") < 0) {
     //alert("in login");
     signUpSection.style.display = "none";
     resetPasswordSection.style.display = "none";

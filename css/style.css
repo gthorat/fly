@@ -22,8 +22,8 @@ body {
 
 body>*,
 header>*,
-.chat-room-wrapper form,
-.chat-room-wrapper form>*,
+.chat-room-wrapper>*,
+.chat-room-wrapper form > *,
 .chat-box-wrapper>* {
     flex: auto;
 }
@@ -134,7 +134,7 @@ nav li a {
 }
 
 main,
-main form {
+main>* {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -199,17 +199,21 @@ textarea {
     font-size: 0.9375rem;
 }
 
-.chat-room-wrapper,
-.chat-room-wrapper form {
+.chat-room-wrapper {
     flex-direction: row;
     justify-content: stretch;
     align-items: stretch;
+}
+
+.chat-room-wrapper > * {
+    align-items: inherit;
 }
 
 .user-list-wrapper {
     max-width: 15.625rem;
     background-color: #fff;
     border-right: 1px solid #ece1d8;
+    justify-content: flex-start;
 }
 
 .user-list-search-box {
@@ -228,20 +232,21 @@ textarea {
     overflow-y: auto;
 }
 
-.user-list-items li a {
-    display: flex;
+.user-list-items li {
+    /* display: flex;
     flex-direction: row;
     justify-content: stretch;
-    align-items: center;
+    align-items: center; */
     padding: 0.625rem;
     border-bottom: 1px solid #f2f2f2;
     color: #000;
     text-decoration: none;
     font-weight: 300;
     font-size: 0.9375rem;
+    line-height: 32px;
 }
 
-.user-list-items li a:hover {
+.user-list-items li:hover {
     background-color: #E8E8F2;
 }
 
@@ -257,10 +262,14 @@ textarea {
     text-align: center;
     line-height: 1.875rem;
 }
+.user-list-items li span {
+    padding: 8px 7px;
+}
 
-.user-list-items li a:hover span {
+.user-list-items li:hover span {
     border-color: #ffc0cb;
 }
+
 
 .chat-box-wrapper {
     display: flex;
@@ -269,7 +278,13 @@ textarea {
     align-items: stretch;
 }
 
-.chat-text-input {
+.chat-box-wrapper > * {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-box-wrapper .chat-text-input {
+    flex: none;
     padding: 1.25rem 1.25rem 0;
 }
 
@@ -372,6 +387,7 @@ footer {
         width: 43.75rem;
         margin: 0 auto;
     }
+
     .chat-text-input {
         width: 43.75rem;
         margin: 0 auto;
